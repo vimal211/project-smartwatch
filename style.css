@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(34, 40, 44);
+}
+
+.left p {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+}
+
+.watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 390px;
+  background-color: rgb(70, 68, 68);
+  border-radius: 80px;
+}
+
+.watch__content {
+  color: white;
+  display: flex;
+  background: black;
+  border-radius: 80px;
+  height: 90%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#time {
+  font-weight: bolder;
+  font-size: 60px;
+}
+#day {
+  font-size: 20px;
+}
+#bottom {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+span {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+i {
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+}
+
+#msg-conatiner {
+  display: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 90%;
+  height: 60%;
+  background-color: white;
+  color: black;
+}
+
+#msg-conatiner div{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#msg-conatiner p{
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+#music-container{
+  display: none;
+  border-radius: 20px;
+  border: 5px solid white;
+  width: 90%;
+  height: 60%;
+  background-color: black;
+  color: black;
+}
+
+.mus{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.music_top{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+audio{
+  width: 90%;
+  height: 20px;
+  color: black;
+}
+
+.music_bottom{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 10px;
+  justify-content: space-around;
+}
+
+.music_bottom p{
+  cursor: pointer;
+}
+
+img{
+  height: 75px;
+  width: 75px;
+}
+
+#clock-container{
+  display: none;
+  color: white;
+  width: 90%;
+  height: 60%;
+}
+.clockMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+}
+.clock_bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#pauseBtn{
+  display: none;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
